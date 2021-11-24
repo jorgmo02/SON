@@ -16,6 +16,11 @@
 # Mono auto generated files
 mono_crash.*
 
+#FMOD
+/FMOD Project/.unsaved
+/FMOD Project/.user
+/FMOD Project/.cache
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/

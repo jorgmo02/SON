@@ -17,9 +17,12 @@
 mono_crash.*
 
 #FMOD
-/FMOD Project/.unsaved
-/FMOD Project/.user
-/FMOD Project/.cache
+#/FMOD Project/.unsaved
+#/FMOD Project/.user
+#/FMOD Project/.cache
+*.cache
+*.user
+*.unsaved
 
 # Build results
 [Dd]ebug/

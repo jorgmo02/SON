@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{f78bf677-178a-43ff-ac71-762a38d116d4}">
+		<property name="name">
+			<value>DistanceToCenter</value>
+		</property>
+		<relationship name="folder">
+			<destination>{015f2a1c-1273-4609-a170-1825e7f71b6f}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{f3255620-2a87-41b1-aae6-ef03da1cc7f8}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{f3255620-2a87-41b1-aae6-ef03da1cc7f8}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

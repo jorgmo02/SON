@@ -60,8 +60,8 @@
 	<object class="MarkerTrack" id="{9a02d6b2-36e1-4b4e-b3fa-4ef93d287126}" />
 	<object class="GroupTrack" id="{99910ca9-f968-44fb-bd06-6553ef99f24a}">
 		<relationship name="automationTracks">
-			<destination>{a708c411-747b-4197-b7ed-4d226db600f2}</destination>
 			<destination>{47b67d7e-65d2-4d2a-ac42-f1ae5b734d30}</destination>
+			<destination>{6f39eef8-dd19-4cde-bfc8-fe2f09ae19e9}</destination>
 		</relationship>
 		<relationship name="modules">
 			<destination>{6df2e1a7-57d3-4296-a251-7d1bb8855f65}</destination>
@@ -96,14 +96,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{bac6ec05-d090-4dee-97b3-16e8830ea167}" />
-	<object class="AutomationTrack" id="{a708c411-747b-4197-b7ed-4d226db600f2}">
-		<relationship name="automator">
-			<destination>{c141c147-5765-430b-96c4-9b163760a011}</destination>
-		</relationship>
-	</object>
 	<object class="AutomationTrack" id="{47b67d7e-65d2-4d2a-ac42-f1ae5b734d30}">
 		<relationship name="automator">
 			<destination>{67de4c34-33ca-4311-b357-222431dfa0ed}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationTrack" id="{6f39eef8-dd19-4cde-bfc8-fe2f09ae19e9}">
+		<relationship name="automator">
+			<destination>{c141c147-5765-430b-96c4-9b163760a011}</destination>
 		</relationship>
 	</object>
 	<object class="MultiSound" id="{6df2e1a7-57d3-4296-a251-7d1bb8855f65}">
@@ -143,6 +143,9 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{a8d3f564-a120-49cc-9a87-791b7b21a2ce}">
+		<property name="pitch">
+			<value>1.20000005</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{12bf5107-c7a7-4475-b309-ed7c4a2b99a8}</destination>
 		</relationship>

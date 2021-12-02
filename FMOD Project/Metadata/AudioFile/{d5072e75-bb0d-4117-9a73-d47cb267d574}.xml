@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{d5072e75-bb0d-4117-9a73-d47cb267d574}">
 		<property name="assetPath">
-			<value>12[kb]dryrim.wav.mp3</value>
+			<value>Snares/12[kb]dryrim.wav.mp3</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>22.0499992</value>

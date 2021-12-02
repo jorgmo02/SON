@@ -154,6 +154,50 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-7970370904080712513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Snare/DistanceToCenter
+  m_EditorClassIdentifier: 
+  Name: DistanceToCenter
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-7691236792534325577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Snare/Strength
+  m_EditorClassIdentifier: 
+  Name: Strength
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-7476023845645332311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,6 +209,28 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Snare/Strength
+  m_EditorClassIdentifier: 
+  Name: Strength
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-7366931591372824127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Kick/Strength
   m_EditorClassIdentifier: 
   Name: Strength
   Min: 0
@@ -191,7 +257,7 @@ MonoBehaviour:
   Path: ../FMOD Project/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637740645161533125
+  lastModified: 637740697628578187
   FileSizes:
   - Name: Desktop
     Value: 1024
@@ -211,11 +277,33 @@ MonoBehaviour:
   Path: ../FMOD Project/Build/Desktop/Drums.bank
   Name: Drums
   StudioPath: bank:/Drums
-  lastModified: 637740645162480592
+  lastModified: 637740697630503033
   FileSizes:
   - Name: Desktop
-    Value: 183584
+    Value: 214368
   Exists: 1
+--- !u!114 &-6664676401063157051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Snare/DistanceToCenter
+  m_EditorClassIdentifier: 
+  Name: DistanceToCenter
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-6346593588109127372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,6 +337,28 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Kick/Strength
+  m_EditorClassIdentifier: 
+  Name: Strength
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-5370677532732339699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Snare/Strength
   m_EditorClassIdentifier: 
   Name: Strength
   Min: 0
@@ -319,7 +429,7 @@ MonoBehaviour:
   Path: ../FMOD Project/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637740645161493231
+  lastModified: 637740697628548259
   FileSizes:
   - Name: Desktop
     Value: 1012
@@ -390,6 +500,50 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-2054840920865858782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/HiHat/Strength
+  m_EditorClassIdentifier: 
+  Name: Strength
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1019095089
+    data2: 2951834586
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
+--- !u!114 &-1282504502937899126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Kick/Strength
+  m_EditorClassIdentifier: 
+  Name: Strength
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-717717079102230832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,11 +559,11 @@ MonoBehaviour:
   Path: ../FMOD Project/Build/Desktop/Snare.bank
   Name: Snare
   StudioPath: bank:/Snare
-  lastModified: 637740645161852284
+  lastModified: 637740671250405099
   FileSizes:
   - Name: Desktop
     Value: 173856
-  Exists: 1
+  Exists: 0
 --- !u!114 &-360212190661951545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -423,6 +577,28 @@ MonoBehaviour:
   m_Name: parameter:/Snare/DistanceToCenter
   m_EditorClassIdentifier: 
   Name: DistanceToCenter
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-166095386875578303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Kick/Strength
+  m_EditorClassIdentifier: 
+  Name: Strength
   Min: 0
   Max: 1
   Default: 0
@@ -448,17 +624,16 @@ MonoBehaviour:
   - {fileID: -6885153055154310225}
   - {fileID: -4843341274977681457}
   - {fileID: -6786979025939982025}
-  - {fileID: 4189807600161578270}
-  - {fileID: -717717079102230832}
   EditorEvents:
   - {fileID: 1025669717738959040}
   - {fileID: 2647781097420616443}
+  - {fileID: 6430190411779403887}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4843341274977681457}
   StringsBanks:
   - {fileID: -6885153055154310225}
-  stringsBankWriteTime: 637740645161533125
+  stringsBankWriteTime: 637740697628578187
   cacheVersion: 8
 --- !u!114 &30567494744879027
 MonoBehaviour:
@@ -473,6 +648,28 @@ MonoBehaviour:
   m_Name: parameter:/Snare/DistanceToCenter
   m_EditorClassIdentifier: 
   Name: DistanceToCenter
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &481599240026007567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Kick/Strength
+  m_EditorClassIdentifier: 
+  Name: Strength
   Min: 0
   Max: 1
   Default: 0
@@ -498,12 +695,11 @@ MonoBehaviour:
   guid: 271ea258c023ca49bbd80874f8d02b4e
   Banks:
   - {fileID: -6786979025939982025}
-  - {fileID: 4189807600161578270}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -8399753119939958713}
+  - {fileID: -1282504502937899126}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -551,6 +747,50 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &1846499668393382990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/HiHat/Open
+  m_EditorClassIdentifier: 
+  Name: Open
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 439042098
+    data2: 4022402261
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
+--- !u!114 &2259050310427271432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Snare/DistanceToCenter
+  m_EditorClassIdentifier: 
+  Name: DistanceToCenter
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1335982247
+    data2: 668061470
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &2647781097420616443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -567,13 +807,12 @@ MonoBehaviour:
   guid: e81c62024b3a8d4f9cd3b23edf126ff8
   Banks:
   - {fileID: -6786979025939982025}
-  - {fileID: -717717079102230832}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -4858938547944977227}
-  - {fileID: -9060263641285640309}
+  - {fileID: 5336811940948813162}
+  - {fileID: 4336442549024952431}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -599,6 +838,50 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &3565952667324698547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Snare/DistanceToCenter
+  m_EditorClassIdentifier: 
+  Name: DistanceToCenter
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &3661427705157836490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Snare/Strength
+  m_EditorClassIdentifier: 
+  Name: Strength
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1019095089
+    data2: 2951834586
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &4189807600161578270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -614,11 +897,11 @@ MonoBehaviour:
   Path: ../FMOD Project/Build/Desktop/Kick.bank
   Name: Kick
   StudioPath: bank:/Kick
-  lastModified: 637740645162091638
+  lastModified: 637740671250654555
   FileSizes:
   - Name: Desktop
     Value: 10752
-  Exists: 1
+  Exists: 0
 --- !u!114 &4223969944237331874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -641,6 +924,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &4336442549024952431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Snare/DistanceToCenter
+  m_EditorClassIdentifier: 
+  Name: DistanceToCenter
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &4488408077016683743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -663,6 +968,50 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 1
+--- !u!114 &5336811940948813162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Snare/Strength
+  m_EditorClassIdentifier: 
+  Name: Strength
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
+--- !u!114 &5661418324953588627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Snare/Strength
+  m_EditorClassIdentifier: 
+  Name: Strength
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &6181686844008017320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -685,6 +1034,31 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 1
+--- !u!114 &6430190411779403887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Drums/HiHat
+  m_EditorClassIdentifier: 
+  Path: event:/Drums/HiHat
+  guid: 68270a778a2add4e80d32e9be8d7e200
+  Banks:
+  - {fileID: -6786979025939982025}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 1846499668393382990}
+  - {fileID: -2054840920865858782}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &7702604634982781838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -698,6 +1072,28 @@ MonoBehaviour:
   m_Name: parameter:/Snare/DistanceToCenter
   m_EditorClassIdentifier: 
   Name: DistanceToCenter
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &8005756707623558330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Kick/Strength
+  m_EditorClassIdentifier: 
+  Name: Strength
   Min: 0
   Max: 1
   Default: 0

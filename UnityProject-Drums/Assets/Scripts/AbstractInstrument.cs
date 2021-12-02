@@ -8,4 +8,16 @@ public abstract class AbstractInstrument : MonoBehaviour
     {
         Debug.Log("Calling default Reproduce");
     }
+
+    public float CalculateDistance(Vector2 pos)
+    {
+        Vector2 hitRelativeToCenter = pos - new Vector2(transform.position.x, transform.position.y);
+
+        Debug.Log(hitRelativeToCenter);
+
+        hitRelativeToCenter.x /= transform.parent.transform.localScale.x / 2;
+        hitRelativeToCenter.y /= transform.parent.transform.localScale.y / 2;
+
+        return Mathf.Sqrt(hitRelativeToCenter.sqrMagnitude);
+    }
 }

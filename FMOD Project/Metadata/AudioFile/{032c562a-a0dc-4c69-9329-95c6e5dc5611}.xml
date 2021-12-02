@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
-	<object class="AudioFile" id="{456f1758-e051-400f-a38b-660c59b7a474}">
+	<object class="AudioFile" id="{032c562a-a0dc-4c69-9329-95c6e5dc5611}">
 		<property name="assetPath">
-			<value>Snares/881[kb]natural-sd-rim-off-6.wav.mp3</value>
+			<value>HiHats/20[kb]brighterchh.wav.mp3</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>22.0499992</value>
@@ -11,7 +11,7 @@
 			<value>1</value>
 		</property>
 		<property name="length">
-			<value>3.4742857142857142</value>
+			<value>0.26122448979591839</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{bd673f21-9bb1-4c1f-a0eb-90a30465b3bb}</destination>

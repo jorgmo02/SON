@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="EncodableAsset" id="{11831aa0-760d-467b-bfeb-efd748de489e}">
+		<property name="assetPath">
+			<value>Snares/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bd673f21-9bb1-4c1f-a0eb-90a30465b3bb}</destination>
+		</relationship>
+	</object>
+</objects>

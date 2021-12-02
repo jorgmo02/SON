@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Snare : AbstractInstrument
+public class Drum : AbstractInstrument
 {
     [EventRef]
     public string eventName = "";
@@ -12,8 +12,6 @@ public class Snare : AbstractInstrument
 
     public override void Reproduce(Vector2 hitPos, float strength)
     {
-        Debug.Log("Calling snare Reproduce");
-
         instance = FMODUnity.RuntimeManager.CreateInstance(eventName);
 
         instance.setParameterByName("Strength", strength);

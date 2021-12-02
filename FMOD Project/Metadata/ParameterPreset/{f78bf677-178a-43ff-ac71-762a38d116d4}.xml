@@ -12,6 +12,9 @@
 		</relationship>
 	</object>
 	<object class="GameParameter" id="{f3255620-2a87-41b1-aae6-ef03da1cc7f8}">
+		<property name="isHeld">
+			<value>true</value>
+		</property>
 		<property name="initialValue">
 			<value>0</value>
 		</property>

@@ -41,6 +41,8 @@ public class HandleInput : MonoBehaviour
     {
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
+        //Debug.DrawRay(ray.origin, ray.direction);
+
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit))

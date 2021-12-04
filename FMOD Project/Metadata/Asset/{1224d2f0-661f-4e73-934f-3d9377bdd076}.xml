@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="EncodableAsset" id="{1224d2f0-661f-4e73-934f-3d9377bdd076}">
+		<property name="assetPath">
+			<value>HiHats/hit open/mid/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bd673f21-9bb1-4c1f-a0eb-90a30465b3bb}</destination>
+		</relationship>
+	</object>
+</objects>

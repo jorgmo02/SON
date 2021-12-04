@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{522eb88c-392b-4de0-b4ba-8b2d97efe149}">
+		<property name="assetPath">
+			<value>HiHats/hit open/mid/Hi-Hat-Open-Hit-B3.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.1360000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bd673f21-9bb1-4c1f-a0eb-90a30465b3bb}</destination>
+		</relationship>
+	</object>
+</objects>

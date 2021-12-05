@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HandleInput : MonoBehaviour
 {
@@ -8,10 +9,27 @@ public class HandleInput : MonoBehaviour
     [Range(0,1)]
     float strength = 1.0f;
 
+    [SerializeField]
+    Text strText;
+
+    [SerializeField]
+    Slider strSlider;
+
+    [SerializeField]
+    [Range(0, 1)]
+    float hiHatOpened = 0.0f;
+
+    [SerializeField]
+    Text hhOpenText;
+
+    [SerializeField]
+    Slider hhOpenSlider;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        updateStrength(strength);
+        updateHiHatOpen(hiHatOpened);
     }
 
     // Update is called once per frame
@@ -22,18 +40,24 @@ public class HandleInput : MonoBehaviour
             Clicked();
         }
 
-        if (Input.GetKeyDown("-"))
+        if (Input.GetKeyDown("a"))
         {
-            strength -= .5f;
-            if (strength < 0.0f)
-                strength = 0.0f;
+            updateHiHatOpen(hiHatOpened - 0.05f);
         }
 
-        if (Input.GetKeyDown("+"))
+        if (Input.GetKeyDown("s"))
         {
-            strength -= .5f;
-            if (strength > 1.0f)
-                strength = 1.0f;
+            updateHiHatOpen(hiHatOpened + 0.05f);
+        }
+
+        if (Input.GetKeyDown("z"))
+        {
+            updateStrength(strength - 0.05f);
+        }
+
+        if (Input.GetKeyDown("x"))
+        {
+            updateStrength(strength + 0.05f);
         }
     }
 
@@ -54,5 +78,47 @@ public class HandleInput : MonoBehaviour
                 instrument.Reproduce(hit.point, strength);   
             }
         }
+    }
+
+    public void updateStrength(float st)
+    {
+        if (strength < 0.0f)
+            strength = 0.0f;
+        else if (strength > 1.0f)
+            strength = 1.0f;
+
+        strength = st;
+
+        if (strText != null)
+            strText.text = "Strength: " + strength.ToString("F2");
+        else Debug.LogError("Forgot to set the strength text");
+
+        if (strSlider != null)
+            strSlider.value = st;
+        else Debug.LogError("Forgot to set the strength slider");
+    }
+
+    public void updateHiHatOpen(float open)
+    {
+        if (hiHatOpened < 0.0f)
+            hiHatOpened = 0.0f;
+        else if (hiHatOpened > 1.0f)
+            hiHatOpened = 1.0f;
+
+        hiHatOpened = open;
+
+        if (hhOpenText != null)
+            hhOpenText.text = "Hi Hat Open: " + hiHatOpened.ToString("F2");
+        else Debug.LogError("Forgot to set the hi-hat open text");
+
+
+        if (hhOpenSlider != null)
+            hhOpenSlider.value = open;
+        else Debug.LogError("Forgot to set the hi-hat open slider");
+    }
+
+    public float getHiHatOpen()
+    {
+        return hiHatOpened;
     }
 }

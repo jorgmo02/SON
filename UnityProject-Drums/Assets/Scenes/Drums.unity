@@ -336,10 +336,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 114110326}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed18f1fa751a4ff4ea84ac5086d76c75, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ffd53e422d4bab4bb37105d21c56b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventName: event:/Drums/TomMid
+  eventName: event:/Drums/Toms/TomMid
 --- !u!1 &174589871
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,7 +425,7 @@ GameObject:
   m_Component:
   - component: {fileID: 235856814}
   m_Layer: 0
-  m_Name: Crash2
+  m_Name: Splash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -439,8 +439,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235856813}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11, y: 9, z: -8}
-  m_LocalScale: {x: 11, y: 11, z: 1}
+  m_LocalPosition: {x: 10.84, y: 8.51, z: -8}
+  m_LocalScale: {x: 9, y: 9, z: 1}
   m_Children:
   - {fileID: 1132749764}
   m_Father: {fileID: 565254047}
@@ -552,7 +552,7 @@ GameObject:
   m_Component:
   - component: {fileID: 282458480}
   m_Layer: 0
-  m_Name: Crash1
+  m_Name: Crash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -566,8 +566,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 282458479}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14, y: 7.69, z: -8}
-  m_LocalScale: {x: 9, y: 9, z: 1}
+  m_LocalPosition: {x: -14.71, y: 7.85, z: -8}
+  m_LocalScale: {x: 11, y: 11, z: 1}
   m_Children:
   - {fileID: 665776794}
   m_Father: {fileID: 565254047}
@@ -639,6 +639,85 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &410623550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 410623551}
+  - component: {fileID: 410623553}
+  - component: {fileID: 410623552}
+  m_Layer: 5
+  m_Name: HiHatOpenText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &410623551
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410623550}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1089790071}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 27}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &410623552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410623550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Hi Hat Open
+--- !u!222 &410623553
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410623550}
+  m_CullTransparentMesh: 1
 --- !u!1 &430252917
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,6 +994,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strength: 0.5
+  strText: {fileID: 1950471070}
+  strSlider: {fileID: 1099772763}
+  hiHatOpened: 0
+  hhOpenText: {fileID: 410623552}
+  hhOpenSlider: {fileID: 1089790072}
 --- !u!4 &612781243
 Transform:
   m_ObjectHideFlags: 0
@@ -1048,10 +1132,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 665776793}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed18f1fa751a4ff4ea84ac5086d76c75, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ffd53e422d4bab4bb37105d21c56b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventName: event:/Drums/HiHat
+  eventName: event:/Drums/Cymbals/Crash
 --- !u!135 &665776796
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1524,12 +1608,13 @@ RectTransform:
   - {fileID: 613443074}
   - {fileID: 1079639414}
   - {fileID: 1785556506}
+  - {fileID: 410623551}
   m_Father: {fileID: 2005141933}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 224, y: 105}
+  m_AnchoredPosition: {x: 119, y: 105}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1089790072
@@ -1582,7 +1667,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 612781242}
+        m_TargetAssemblyTypeName: HandleInput, Assembly-CSharp
+        m_MethodName: updateHiHatOpen
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1099772761
 GameObject:
   m_ObjectHideFlags: 0
@@ -1614,6 +1711,7 @@ RectTransform:
   - {fileID: 174589872}
   - {fileID: 430252918}
   - {fileID: 1654905642}
+  - {fileID: 1950471069}
   m_Father: {fileID: 2005141933}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1669,10 +1767,22 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 612781242}
+        m_TargetAssemblyTypeName: HandleInput, Assembly-CSharp
+        m_MethodName: updateStrength
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1114815090
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,7 +1795,7 @@ GameObject:
   - component: {fileID: 1114815096}
   - component: {fileID: 1114815095}
   - component: {fileID: 1114815094}
-  - component: {fileID: 1114815093}
+  - component: {fileID: 1114815092}
   m_Layer: 0
   m_Name: Cymbal
   m_TagString: Untagged
@@ -1708,7 +1818,7 @@ Transform:
   m_Father: {fileID: 1474408449}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!114 &1114815093
+--- !u!114 &1114815092
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1717,10 +1827,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1114815090}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed18f1fa751a4ff4ea84ac5086d76c75, type: 3}
+  m_Script: {fileID: 11500000, guid: 92c2375f87c888643957989aba7a9967, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventName: event:/Drums/HiHat
+  eventName: event:/Drums/HiHat/HiHat
+  input: {fileID: 612781242}
 --- !u!135 &1114815094
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1923,10 +2034,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1132749763}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed18f1fa751a4ff4ea84ac5086d76c75, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ffd53e422d4bab4bb37105d21c56b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventName: event:/Drums/HiHat
+  eventName: event:/Drums/Cymbals/Splash
 --- !u!135 &1132749766
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2096,10 +2207,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1142042753}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed18f1fa751a4ff4ea84ac5086d76c75, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ffd53e422d4bab4bb37105d21c56b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventName: event:/Drums/TomMid
+  eventName: event:/Drums/Toms/TomFloor
 --- !u!1 &1186812559
 GameObject:
   m_ObjectHideFlags: 0
@@ -2348,10 +2459,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1287240233}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed18f1fa751a4ff4ea84ac5086d76c75, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ffd53e422d4bab4bb37105d21c56b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventName: event:/Drums/HiHat
+  eventName: event:/Drums/Cymbals/Ride
 --- !u!135 &1287240236
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3032,10 +3143,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1936308923}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed18f1fa751a4ff4ea84ac5086d76c75, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ffd53e422d4bab4bb37105d21c56b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventName: event:/Drums/TomHi
+  eventName: event:/Drums/Toms/TomHi
 --- !u!1 &1938148468
 GameObject:
   m_ObjectHideFlags: 0
@@ -3068,6 +3179,87 @@ Transform:
   m_Father: {fileID: 565254047}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1950471068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1950471069}
+  - component: {fileID: 1950471071}
+  - component: {fileID: 1950471070}
+  m_Layer: 5
+  m_Name: StrText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1950471069
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950471068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1099772762}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 26}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1950471070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950471068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Strength
+
+'
+--- !u!222 &1950471071
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950471068}
+  m_CullTransparentMesh: 1
 --- !u!1 &2005141929
 GameObject:
   m_ObjectHideFlags: 0
@@ -3182,7 +3374,6 @@ GameObject:
   - component: {fileID: 2018530503}
   - component: {fileID: 2018530505}
   - component: {fileID: 2018530502}
-  - component: {fileID: 2018530506}
   m_Layer: 0
   m_Name: Drum
   m_TagString: Untagged
@@ -3214,7 +3405,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2018530500}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed18f1fa751a4ff4ea84ac5086d76c75, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ffd53e422d4bab4bb37105d21c56b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   eventName: event:/Drums/Snare
@@ -3280,33 +3471,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000014901164}
---- !u!114 &2018530506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2018530500}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Drums/Snare
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params:
-  - Name: Strength
-    Value: 0.788
-  - Name: DistanceToCenter
-    Value: 0.165
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &2037147486
 GameObject:
   m_ObjectHideFlags: 0
@@ -3490,6 +3654,7 @@ GameObject:
   - component: {fileID: 2115347361}
   - component: {fileID: 2115347360}
   - component: {fileID: 2115347359}
+  - component: {fileID: 2115347358}
   m_Layer: 0
   m_Name: Pedal
   m_TagString: Untagged
@@ -3511,6 +3676,20 @@ Transform:
   m_Father: {fileID: 1474408449}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30.481}
+--- !u!114 &2115347358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115347356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fb7dea58c25ec409876a15c5ef565a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventName: event:/Drums/HiHat/HiHatPedal
+  input: {fileID: 612781242}
 --- !u!65 &2115347359
 BoxCollider:
   m_ObjectHideFlags: 0

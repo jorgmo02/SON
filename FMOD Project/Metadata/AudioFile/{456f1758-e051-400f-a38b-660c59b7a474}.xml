@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{456f1758-e051-400f-a38b-660c59b7a474}">
 		<property name="assetPath">
-			<value>Snares/881[kb]natural-sd-rim-off-6.wav.mp3</value>
+			<value>Snares/old/881[kb]natural-sd-rim-off-6.wav.mp3</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>22.0499992</value>

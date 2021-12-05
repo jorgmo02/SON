@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{a1d48ce9-57c5-4049-9514-b3fbb4f89660}">
 		<property name="assetPath">
-			<value>Toms/15[kb]snap.wav.mp3</value>
+			<value>Toms/other/15[kb]snap.wav.mp3</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>22.0499992</value>

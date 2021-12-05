@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{dc371307-1635-43c0-995f-f293a06eef7b}">
 		<property name="assetPath">
-			<value>Toms/137[kb]TIMBALES_1.WAV.mp3</value>
+			<value>Toms/Mid/137[kb]TIMBALES_1.WAV.mp3</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>22.0499992</value>

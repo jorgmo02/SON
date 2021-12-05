@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{86835346-a7cf-49bb-a047-380af07061b6}">
 		<property name="assetPath">
-			<value>Kicks/129[kb]bunchakiks40.wav.mp3</value>
+			<value>Kicks/old/129[kb]bunchakiks40.wav.mp3</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>22.0499992</value>

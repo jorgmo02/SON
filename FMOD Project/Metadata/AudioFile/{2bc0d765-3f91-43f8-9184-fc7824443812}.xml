@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{2bc0d765-3f91-43f8-9184-fc7824443812}">
 		<property name="assetPath">
-			<value>Toms/8[kb]clave.wav.mp3</value>
+			<value>Toms/other/8[kb]clave.wav.mp3</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>22.0499992</value>

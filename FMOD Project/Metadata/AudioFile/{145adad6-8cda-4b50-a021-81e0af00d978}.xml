@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{145adad6-8cda-4b50-a021-81e0af00d978}">
 		<property name="assetPath">
-			<value>HiHats/other/15[kb]chh.wav.mp3</value>
+			<value>HiHats/old/15[kb]chh.wav.mp3</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>22.0499992</value>

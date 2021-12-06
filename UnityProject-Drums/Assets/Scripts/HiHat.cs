@@ -1,5 +1,5 @@
 using FMODUnity;
-using System.Collections;
+using Nito.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,7 +7,7 @@ public class HiHat : AbstractInstrument
 {
     //FMOD.Studio.EventInstance instance;
 
-    Queue<FMOD.Studio.EventInstance> instances; 
+    Deque<FMOD.Studio.EventInstance> instances; 
 
     [EventRef]
     public string eventName = "";
@@ -17,7 +17,18 @@ public class HiHat : AbstractInstrument
 
     private void Awake()
     {
-        instances = new Queue<FMOD.Studio.EventInstance>();
+        instances = new Deque<FMOD.Studio.EventInstance>();
+    }
+
+    public void EnqueueSound(FMOD.Studio.EventInstance instance)
+    {
+        instances.AddToBack(instance);
+        if (instances.Count > 100)
+        {
+            var a = instances.RemoveFromFront();
+            a.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            a.release();
+        }
     }
 
     public override void Reproduce(Vector2 hitPos, float strength)
@@ -30,29 +41,16 @@ public class HiHat : AbstractInstrument
         instance.setParameterByName("Open", input.getHiHatOpen());
 
         instance.start();
-        instances.Enqueue(instance);
-        Invoke("ReleaseInstance", 5);
-    }
-
-    void ReleaseInstance()
-    {
-        // la libero para que se vuelva independiente y se destruya asi misma al terminar
-        if (instances.Count > 0)
-        {
-            var inst = instances.Dequeue();
-            if (inst.isValid())
-                inst.release();
-        }
+        EnqueueSound(instance);
+        //instance.release();
     }
 
     public void CloseHiHat(float strength)
     {
         while (instances.Count > 0)
         {
-            var inst = instances.Dequeue();
-            if (inst.isValid())
-                inst.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-            else Debug.LogError("Instance not valid, cannot stop");
+            var inst = instances.RemoveFromFront();
+            inst.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
             inst.release();
         }
 

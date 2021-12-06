@@ -1,6 +1,4 @@
 using FMODUnity;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PedalHiHat : AbstractInstrument
@@ -12,6 +10,9 @@ public class PedalHiHat : AbstractInstrument
 
     [SerializeField]
     HandleInput input;
+
+    [SerializeField]
+    HiHat hiHat;
 
     public override void Reproduce(Vector2 hitPos, float strength)
     {
@@ -25,8 +26,7 @@ public class PedalHiHat : AbstractInstrument
         instance.setParameterByName("Open", input.getHiHatOpen());
 
         instance.start();
-
-        // la libero para que se vuelva independiente y se destruya asi misma al terminar
-        instance.release();
+        hiHat.EnqueueSound(instance);
+        //instance.release();
     }
 }

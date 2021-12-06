@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -27,15 +25,18 @@ public class HandleInput : MonoBehaviour
 
     [SerializeField]
     HiHat hiHat = null;
-
+    
     [SerializeField]
     float hihatCloseThreshold = 0.1f;
+
+    bool firstTime = true;
 
     // Start is called before the first frame update
     void Start()
     {
         updateStrength(strength);
         updateHiHatOpen(hiHatOpened);
+        firstTime = false;
     }
 
     // Update is called once per frame
@@ -106,21 +107,22 @@ public class HandleInput : MonoBehaviour
 
     public void updateHiHatOpen(float open)
     {
+        Debug.Log("Calling HiHatOpen");
+
         hiHatOpened = Mathf.Clamp(open, 0f, 1f);
 
         if (hhOpenText != null)
             hhOpenText.text = "Hi Hat Open: " + hiHatOpened.ToString("F2");
-#if DEBUG
         else Debug.LogError("Forgot to set the hi-hat open text");
-#endif
 
         if (hhOpenSlider != null)
             hhOpenSlider.value = hiHatOpened;
-#if DEBUG
         else Debug.LogError("Forgot to set the hi-hat open slider");
-#endif
-        if(hiHatOpened < hihatCloseThreshold)
+        
+
+        if(hiHatOpened < hihatCloseThreshold && !firstTime)
         {
+            if (hihatCloseThreshold - hiHatOpened == 0f) hiHatOpened += 0.01f;
             hiHat.CloseHiHat(Mathf.Clamp(strength / (hihatCloseThreshold - hiHatOpened), 0, 1));
         }
     }

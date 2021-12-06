@@ -122,6 +122,9 @@
 		</relationship>
 	</object>
 	<object class="MultiSound" id="{05f9c361-7e0c-4638-a649-e083acda9b61}">
+		<property name="isCutoff">
+			<value>true</value>
+		</property>
 		<property name="start">
 			<value>0.5</value>
 		</property>

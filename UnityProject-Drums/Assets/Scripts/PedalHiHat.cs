@@ -27,6 +27,17 @@ public class PedalHiHat : AbstractInstrument
 
         instance.start();
         hiHat.EnqueueSound(instance);
-        //instance.release();
+    }
+
+    public void ReproduceClose(float strength)
+    {
+        Debug.Log("Calling snare Reproduce");
+
+        instance = FMODUnity.RuntimeManager.CreateInstance(eventName);
+
+        instance.setParameterByName("Strength", strength);
+        instance.setParameterByName("Open", 0);
+        instance.start();
+        instance.release();
     }
 }

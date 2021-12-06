@@ -1096,6 +1096,7 @@ MonoBehaviour:
   hhOpenText: {fileID: 410623552}
   hhOpenSlider: {fileID: 1089790072}
   hiHat: {fileID: 1114815092}
+  pedalHiHat: {fileID: 2115347358}
   hihatCloseThreshold: 0.1
 --- !u!4 &612781243
 Transform:

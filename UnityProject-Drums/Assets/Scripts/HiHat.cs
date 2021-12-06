@@ -53,7 +53,5 @@ public class HiHat : AbstractInstrument
             inst.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
             inst.release();
         }
-
-        Reproduce(Vector2.zero, strength);
     }
 }

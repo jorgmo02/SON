@@ -27,6 +27,9 @@ public class HandleInput : MonoBehaviour
     HiHat hiHat = null;
     
     [SerializeField]
+    PedalHiHat pedalHiHat = null;
+
+    [SerializeField]
     float hihatCloseThreshold = 0.1f;
 
     bool firstTime = true;
@@ -124,6 +127,7 @@ public class HandleInput : MonoBehaviour
         {
             if (hihatCloseThreshold - hiHatOpened == 0f) hiHatOpened += 0.01f;
             hiHat.CloseHiHat(Mathf.Clamp(strength / (hihatCloseThreshold - hiHatOpened), 0, 1));
+            pedalHiHat.ReproduceClose(strength);
         }
     }
 

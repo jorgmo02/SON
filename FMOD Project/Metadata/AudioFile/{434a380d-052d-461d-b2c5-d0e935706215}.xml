@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{434a380d-052d-461d-b2c5-d0e935706215}">
+		<property name="assetPath">
+			<value>Snares/Snare-Drum-Hit-Level-2b-www.fesliyanstudios.com.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.1040000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bd673f21-9bb1-4c1f-a0eb-90a30465b3bb}</destination>
+		</relationship>
+	</object>
+</objects>

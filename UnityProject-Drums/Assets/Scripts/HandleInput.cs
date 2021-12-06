@@ -32,14 +32,14 @@ public class HandleInput : MonoBehaviour
     [SerializeField]
     float hihatCloseThreshold = 0.1f;
 
-    bool firstTime = true;
+    bool insideRange = true;
 
     // Start is called before the first frame update
     void Start()
     {
         updateStrength(strength);
         updateHiHatOpen(hiHatOpened);
-        firstTime = false;
+        insideRange = false;
     }
 
     // Update is called once per frame
@@ -123,12 +123,17 @@ public class HandleInput : MonoBehaviour
         else Debug.LogError("Forgot to set the hi-hat open slider");
         
 
-        if(hiHatOpened < hihatCloseThreshold && !firstTime)
+        if(hiHatOpened < hihatCloseThreshold)
         {
-            if (hihatCloseThreshold - hiHatOpened == 0f) hiHatOpened += 0.01f;
-            hiHat.CloseHiHat(Mathf.Clamp(strength / (hihatCloseThreshold - hiHatOpened), 0, 1));
-            pedalHiHat.ReproduceClose(strength);
+            if (!insideRange)
+            {
+                if (hihatCloseThreshold - hiHatOpened == 0f) hiHatOpened += 0.01f;
+                hiHat.CloseHiHat(Mathf.Clamp(strength / (hihatCloseThreshold - hiHatOpened), 0, 1));
+                pedalHiHat.ReproduceClose(strength);
+                insideRange = true;
+            }
         }
+        else insideRange = false;
     }
 
     public float getHiHatOpen()

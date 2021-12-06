@@ -25,6 +25,12 @@ public class HandleInput : MonoBehaviour
     [SerializeField]
     Slider hhOpenSlider;
 
+    [SerializeField]
+    HiHat hiHat = null;
+
+    [SerializeField]
+    float hihatCloseThreshold = 0.1f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -100,21 +106,23 @@ public class HandleInput : MonoBehaviour
 
     public void updateHiHatOpen(float open)
     {
-        if (hiHatOpened < 0.0f)
-            hiHatOpened = 0.0f;
-        else if (hiHatOpened > 1.0f)
-            hiHatOpened = 1.0f;
-
-        hiHatOpened = open;
+        hiHatOpened = Mathf.Clamp(open, 0f, 1f);
 
         if (hhOpenText != null)
             hhOpenText.text = "Hi Hat Open: " + hiHatOpened.ToString("F2");
+#if DEBUG
         else Debug.LogError("Forgot to set the hi-hat open text");
-
+#endif
 
         if (hhOpenSlider != null)
-            hhOpenSlider.value = open;
+            hhOpenSlider.value = hiHatOpened;
+#if DEBUG
         else Debug.LogError("Forgot to set the hi-hat open slider");
+#endif
+        if(hiHatOpened < hihatCloseThreshold)
+        {
+            hiHat.CloseHiHat(Mathf.Clamp(strength / (hihatCloseThreshold - hiHatOpened), 0, 1));
+        }
     }
 
     public float getHiHatOpen()

@@ -1095,6 +1095,8 @@ MonoBehaviour:
   hiHatOpened: 0
   hhOpenText: {fileID: 410623552}
   hhOpenSlider: {fileID: 1089790072}
+  hiHat: {fileID: 1114815092}
+  hihatCloseThreshold: 0.1
 --- !u!4 &612781243
 Transform:
   m_ObjectHideFlags: 0
@@ -1710,7 +1712,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 119, y: 105}
+  m_AnchoredPosition: {x: 119, y: 88.4}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1089790072
@@ -1813,7 +1815,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 117, y: 45}
+  m_AnchoredPosition: {x: 117, y: 32.3}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1099772763

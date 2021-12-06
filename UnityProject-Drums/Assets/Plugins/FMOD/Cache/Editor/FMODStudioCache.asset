@@ -1,5 +1,27 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9173699981522211395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Snare/DistanceToCenter
+  m_EditorClassIdentifier: 
+  Name: DistanceToCenter
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-9120147343645422176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1099,7 +1121,7 @@ MonoBehaviour:
   Path: ../FMOD Project/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637743255966860218
+  lastModified: 637743275990000000
   FileSizes:
   - Name: Desktop
     Value: 1328
@@ -1141,7 +1163,7 @@ MonoBehaviour:
   Path: ../FMOD Project/Build/Desktop/Drums.bank
   Name: Drums
   StudioPath: bank:/Drums
-  lastModified: 637743255966760488
+  lastModified: 637743275990000000
   FileSizes:
   - Name: Desktop
     Value: 1132800
@@ -1650,11 +1672,33 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -1959916593260087341}
-  - {fileID: 6616043050403703656}
+  - {fileID: 26586933392587968}
+  - {fileID: 4071661960776667795}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-5275288280373598191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Snare/Strength
+  m_EditorClassIdentifier: 
+  Name: Strength
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-5220441188279405037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1868,7 +1912,7 @@ MonoBehaviour:
   Path: ../FMOD Project/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637743255966820331
+  lastModified: 637743275990000000
   FileSizes:
   - Name: Desktop
     Value: 1012
@@ -2005,6 +2049,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-4745979810957789085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Splash/Strength
+  m_EditorClassIdentifier: 
+  Name: Strength
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-4739294494989044435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2159,6 +2225,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-4389874153989553206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TomFloor/DistanceToCenter
+  m_EditorClassIdentifier: 
+  Name: DistanceToCenter
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-4385602865654649810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2399,8 +2487,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -6907269207945619281}
-  - {fileID: 7822890257354025719}
+  - {fileID: 349797449501859208}
+  - {fileID: -1549728133868864161}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -2547,6 +2635,28 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/HiHat/Strength
+  m_EditorClassIdentifier: 
+  Name: Strength
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
+--- !u!114 &-3635453929230461487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Kick/Strength
   m_EditorClassIdentifier: 
   Name: Strength
   Min: 0
@@ -3552,6 +3662,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 1
+--- !u!114 &-1549728133868864161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Crash/DistanceToCenter
+  m_EditorClassIdentifier: 
+  Name: DistanceToCenter
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-1474355470616436609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3926,6 +4058,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-719492737755397020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/HiHatPedal/Strength
+  m_EditorClassIdentifier: 
+  Name: Strength
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-717717079102230832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4176,8 +4330,30 @@ MonoBehaviour:
   - {fileID: -4843341274977681457}
   StringsBanks:
   - {fileID: -6885153055154310225}
-  stringsBankWriteTime: 637743255966860218
+  stringsBankWriteTime: 637743275990000000
   cacheVersion: 8
+--- !u!114 &26586933392587968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TomMid/DistanceToCenter
+  m_EditorClassIdentifier: 
+  Name: DistanceToCenter
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &30567494744879027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4288,6 +4464,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &349797449501859208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Crash/Strength
+  m_EditorClassIdentifier: 
+  Name: Strength
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &365015373426425795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4532,7 +4730,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -3352865903350339618}
+  - {fileID: -3635453929230461487}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -4602,6 +4800,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &1127691609443969590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/HiHat/Open
+  m_EditorClassIdentifier: 
+  Name: Open
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &1159268361294690305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5240,6 +5460,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &2357347813317207769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TomHi/DistanceToCenter
+  m_EditorClassIdentifier: 
+  Name: DistanceToCenter
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &2454828667090081898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5262,6 +5504,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &2486150979892929766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ride/DistanceToCenter
+  m_EditorClassIdentifier: 
+  Name: DistanceToCenter
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &2537616174790722385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5304,8 +5568,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -7083848822432506568}
-  - {fileID: 8233267578415450237}
+  - {fileID: -5275288280373598191}
+  - {fileID: -9173699981522211395}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -5771,6 +6035,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &3565367006397160150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Splash/DistanceToCenter
+  m_EditorClassIdentifier: 
+  Name: DistanceToCenter
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &3565952667324698547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5837,6 +6123,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &3824645844359924269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TomFloor/Strength
+  m_EditorClassIdentifier: 
+  Name: Strength
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &3904533624048685595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5859,6 +6167,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &3970388960063735872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ride/Strength
+  m_EditorClassIdentifier: 
+  Name: Strength
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &4044534015190552150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5881,6 +6211,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &4071661960776667795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TomMid/Strength
+  m_EditorClassIdentifier: 
+  Name: Strength
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &4154955128238536157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6119,8 +6471,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -8827121124195763476}
-  - {fileID: 2079702669947297967}
+  - {fileID: 3565367006397160150}
+  - {fileID: -4745979810957789085}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -6432,6 +6784,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &5641794867657121494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/HiHat/Strength
+  m_EditorClassIdentifier: 
+  Name: Strength
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &5661418324953588627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6584,8 +6958,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -6049677919452955473}
-  - {fileID: 4923879890082124351}
+  - {fileID: -4389874153989553206}
+  - {fileID: 3824645844359924269}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -6987,8 +7361,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -8417336803381797105}
-  - {fileID: -3477111230582675696}
+  - {fileID: 1127691609443969590}
+  - {fileID: 5641794867657121494}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -7056,8 +7430,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -1725033045939908407}
-  - {fileID: 1663215972198042842}
+  - {fileID: 2357347813317207769}
+  - {fileID: 7953137690178401028}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -7213,8 +7587,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -4422251573140891231}
-  - {fileID: 8704514046846085991}
+  - {fileID: 3970388960063735872}
+  - {fileID: 2486150979892929766}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -7231,6 +7605,28 @@ MonoBehaviour:
   m_Name: parameter:/HiHat/Open
   m_EditorClassIdentifier: 
   Name: Open
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
+--- !u!114 &7953137690178401028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TomHi/Strength
+  m_EditorClassIdentifier: 
+  Name: Strength
   Min: 0
   Max: 1
   Default: 0
@@ -7275,6 +7671,28 @@ MonoBehaviour:
   m_Name: parameter:/TomHi/Strength
   m_EditorClassIdentifier: 
   Name: Strength
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
+--- !u!114 &8094252201862656481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/HiHatPedal/Open
+  m_EditorClassIdentifier: 
+  Name: Open
   Min: 0
   Max: 1
   Default: 0
@@ -7634,8 +8052,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -1315050210733605419}
-  - {fileID: 4564728718504623246}
+  - {fileID: 8094252201862656481}
+  - {fileID: -719492737755397020}
   MinDistance: 1
   MaxDistance: 20
   Length: 0

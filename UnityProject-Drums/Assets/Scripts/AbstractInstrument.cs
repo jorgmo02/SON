@@ -15,8 +15,8 @@ public abstract class AbstractInstrument : MonoBehaviour
 
         Debug.Log(hitRelativeToCenter);
 
-        hitRelativeToCenter.x /= transform.parent.transform.localScale.x / 2;
-        hitRelativeToCenter.y /= transform.parent.transform.localScale.y / 2;
+        hitRelativeToCenter.x /= transform.lossyScale.x / 2f;
+        hitRelativeToCenter.y /= transform.lossyScale.y / 2f;
 
         return Mathf.Sqrt(hitRelativeToCenter.sqrMagnitude);
     }

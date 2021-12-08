@@ -1596,6 +1596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dad67844d6530840aa3974d84fdeaaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventName: event:/Drums/Kick
 --- !u!1 &1268570745
 GameObject:
   m_ObjectHideFlags: 0

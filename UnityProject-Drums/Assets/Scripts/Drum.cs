@@ -8,11 +8,9 @@ public class Drum : AbstractInstrument
     [EventRef]
     public string eventName = "";
 
-    FMOD.Studio.EventInstance instance;
-
     public override void Reproduce(Vector2 hitPos, float strength)
     {
-        instance = FMODUnity.RuntimeManager.CreateInstance(eventName);
+        FMOD.Studio.EventInstance instance = FMODUnity.RuntimeManager.CreateInstance(eventName);
 
         instance.setParameterByName("Strength", strength);
         instance.setParameterByName("DistanceToCenter", CalculateDistance(hitPos));

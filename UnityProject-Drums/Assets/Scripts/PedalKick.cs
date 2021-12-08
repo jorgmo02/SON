@@ -1,16 +1,16 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PedalKick : AbstractInstrument
 {
-    FMOD.Studio.EventInstance instance;
+    [EventRef]
+    public string eventName = "";
 
     public override void Reproduce(Vector2 hitPos, float strength)
     {
-        Debug.Log("Calling snare Reproduce");
-
-        instance = FMODUnity.RuntimeManager.CreateInstance("event:/Drums/Kick");
+        FMOD.Studio.EventInstance instance = FMODUnity.RuntimeManager.CreateInstance(eventName);
 
         instance.setParameterByName("Strength", strength);
 

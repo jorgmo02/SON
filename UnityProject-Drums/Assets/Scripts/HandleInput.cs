@@ -45,11 +45,19 @@ public class HandleInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+#if !UNITY_EDITOR && (PLATFORM_ANDROID || PLATFORM_IOS)
+        for(int i = 0; i < Input.touchCount; i++)
+        {
+            Touch touch = Input.GetTouch(i);
+            if(touch.phase == TouchPhase.Began)
+                Clicked(touch.position);
+        }
+#else
         if (Input.GetMouseButtonDown(0))
         {
-            Clicked();
+            Clicked(Input.mousePosition);
         }
-
+#endif
         if (Input.GetKeyDown("a"))
         {
             updateHiHatOpen(hiHatOpened - 0.05f);
@@ -71,9 +79,9 @@ public class HandleInput : MonoBehaviour
         }
     }
 
-    void Clicked()
+    void Clicked(Vector3 touchPosition)
     {
-        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        var ray = Camera.main.ScreenPointToRay(touchPosition);
 
         //Debug.DrawRay(ray.origin, ray.direction);
 

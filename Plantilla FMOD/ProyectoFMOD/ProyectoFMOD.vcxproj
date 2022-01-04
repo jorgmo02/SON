@@ -19,21 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Source\Battle.cpp" />
-    <ClCompile Include="..\Source\InputHandler.cpp" />
-    <ClCompile Include="..\Source\InputListener.cpp" />
-    <ClCompile Include="..\Source\macros.cpp" />
-    <ClCompile Include="..\Source\macros.h" />
     <ClCompile Include="..\Source\main.cpp" />
-    <ClCompile Include="..\Source\Motor.cpp" />
-    <ClCompile Include="..\Source\SoundEntity.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\Source\Battle.h" />
-    <ClInclude Include="..\Source\InputHandler.h" />
-    <ClInclude Include="..\Source\InputListener.h" />
-    <ClInclude Include="..\Source\Motor.h" />
-    <ClInclude Include="..\Source\SoundEntity.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
